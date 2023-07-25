@@ -1,4 +1,9 @@
-/* Reset stil kuralları */
+/* 
+ SpectrumUI
+
+ Egehan Eren Gunes
+
+*/
 body, h1, h2, h3, p, ul, li {
   margin: 0;
   padding: 0;
@@ -83,33 +88,6 @@ body {
   border-radius: 4px;
   padding: 20px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-/* Uyarı Mesajları */
-.alert {
-  padding: 10px;
-  border-radius: 4px;
-  margin-bottom: 20px;
-}
-
-.alert.success {
-  background-color: #28a745; /* Yeşil */
-  color: #fff;
-}
-
-.alert.info {
-  background-color: #007bff; /* Mavi */
-  color: #fff;
-}
-
-.alert.warning {
-  background-color: #ffc107; /* Sarı */
-  color: #fff;
-}
-
-.alert.danger {
-  background-color: #dc3545; /* Kırmızı */
-  color: #fff;
 }
 
 /* Navigasyon Menüsü */
@@ -741,6 +719,872 @@ body {
 .button.arrow:hover {
   transform: translateX(10px);
 }
+
+/* spectrumui.css */
+/* ... (önceki stiller) ... */
+
+/* Accordions */
+.accordion {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.accordion-item {
+  border-top: 1px solid #ccc;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.accordion-item:first-child {
+  border-top: none;
+}
+
+.accordion-item.active {
+  background-color: #f2f2f2;
+}
+
+.accordion-content {
+  display: none;
+  padding: 10px 20px;
+}
+
+.accordion-item.active .accordion-content {
+  display: block;
+}
+
+
+/* spectrumui.css */
+/* ... (önceki stiller) ... */
+
+/* Kafa Salla Animasyonu */
+.headshake {
+  animation: headshake 1s infinite;
+}
+
+@keyframes headshake {
+  0% {
+    transform: translateX(0);
+  }
+  6.5% {
+    transform: translateX(-6px) rotateY(-9deg);
+  }
+  18.5% {
+    transform: translateX(5px) rotateY(7deg);
+  }
+  31.5% {
+    transform: translateX(-3px) rotateY(-5deg);
+  }
+  43.5% {
+    transform: translateX(2px) rotateY(3deg);
+  }
+  50% {
+    transform: translateX(0);
+  }
+}
+
+
+/* spectrumui.css */
+/* ... (önceki stiller) ... */
+
+/* Alert Bileşeni */
+.alert {
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.alert-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  background-size: cover;
+}
+
+.alert-success {
+  background-color: #d4edda; /* Yeşil arkaplan */
+  color: #155724; /* Yeşil yazı rengi */
+  border: 1px solid #c3e6cb; /* Yeşil kenarlık rengi */
+}
+
+.alert-info {
+  background-color: #d1ecf1; /* Mavi arkaplan */
+  color: #0c5460; /* Mavi yazı rengi */
+  border: 1px solid #bee5eb; /* Mavi kenarlık rengi */
+}
+
+.alert-warning {
+  background-color: #fff3cd; /* Sarı arkaplan */
+  color: #856404; /* Sarı yazı rengi */
+  border: 1px solid #ffeeba; /* Sarı kenarlık rengi */
+}
+
+.alert-danger {
+  background-color: #f8d7da; /* Kırmızı arkaplan */
+  color: #721c24; /* Kırmızı yazı rengi */
+  border: 1px solid #f5c6cb; /* Kırmızı kenarlık rengi */
+}
+
+/* spectrumui.css */
+/* ... (önceki stiller) ... */
+
+/* Şeffaf Modallar */
+.modal.transparent .modal-content {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.modal.transparent .modal-content .modal-close {
+  color: #fff;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+
+/* spectrumui.css */
+/* ... (önceki stiller) ... */
+
+/* Sekmeli Menü */
+.tabs {
+  display: flex;
+  border-bottom: 1px solid #ccc;
+}
+
+.tab-item {
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.tab-item.active {
+  background-color: #007bff;
+  color: #fff;
+}
+
+
+/* spectrumui.css */
+/* ... (önceki stiller) ... */
+
+/* Tooltip */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.tooltip-content {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 4px;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.tooltip:hover .tooltip-content {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+/* spectrumui.css */
+/* ... (önceki stiller) ... */
+
+/* Düğme Renkleri */
+/* ... (önceki stiller) ... */
+
+/* Yeni Renkler */
+.button.magenta {
+  background-color: #ff00ff;
+  color: #fff;
+}
+
+.button.lime {
+  background-color: #00ff00;
+  color: #000;
+}
+
+.button.cyan {
+  background-color: #00ffff;
+  color: #000;
+}
+
+/* Renk Paleti */
+/* ... (önceki stiller) ... */
+
+
+/* spectrumui.css */
+/* ... (önceki stiller) ... */
+
+/* Görsel Galeri */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.gallery-item {
+  width: 100%;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+.gallery-item .gallery-item-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.gallery-item:hover .gallery-item-overlay {
+  opacity: 1;
+  visibility: visible;
+}
+
+.gallery-item .gallery-item-overlay i {
+  font-size: 24px;
+  color: #fff;
+}
+
+
+/* spectrumui.css */
+/* ... (önceki stiller) ... */
+
+/* Shadow Box */
+.shadow-box {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* spectrumui.css */
+/* ... (önceki stiller) ... */
+
+/* Navbar Stilleri */
+.navbar {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.navbar li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 20px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.navbar li:hover {
+  opacity: 0.7;
+}
+
+.navbar li.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* spectrumui.css */
+/* ... (önceki stiller) ... */
+
+/* Carousel */
+.carousel {
+  position: relative;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.carousel-container {
+  display: flex;
+}
+
+.carousel-item {
+  flex: 0 0 100%;
+}
+
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  color: #fff;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.carousel-prev {
+  left: 10px;
+}
+
+.carousel-next {
+  right: 10px;
+}
+
+.carousel-indicators {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.carousel-indicator {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #ccc;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.carousel-indicator.active {
+  background-color: #007bff;
+}
+
+
+/* spectrumui.css */
+/* ... (önceki stiller) ... */
+
+/* Düğme Renkleri */
+/* ... (önceki stiller) ... */
+
+/* Yeni Renkler */
+.button.gold {
+  background-color: #ffd700;
+  color: #000;
+}
+
+.button.coral {
+  background-color: #ff7f50;
+  color: #fff;
+}
+
+.button.sky-blue {
+  background-color: #87ceeb;
+  color: #fff;
+}
+
+/* Renk Paleti */
+/* ... (önceki stiller) ... */
+
+
+/* spectrumui.css */
+/* ... (önceki stiller) ... */
+
+/* Badge Bileşeni */
+.badge {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 10px;
+  font-size: 12px;
+}
+
+
+/* spectrumui.css */
+/* ... (önceki stiller) ... */
+
+/* Görsel Galeri Geçiş Animasyonu */
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+
+/* spectrumui.css */
+/* ... (önceki stiller) ... */
+
+/* Toggle Switch */
+.toggle-switch {
+  display: inline-block;
+  width: 50px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: #ccc;
+  position: relative;
+  cursor: pointer;
+}
+
+.toggle-switch::before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: #fff;
+  transition: transform 0.3s ease;
+}
+
+.toggle-switch.active {
+  background-color: #007bff;
+}
+
+.toggle-switch.active::before {
+  transform: translateX(20px);
+}
+
+/* spectrumui.css */
+/* ... (önceki stiller) ... */
+
+/* Wave Effect */
+.wave-effect {
+  position: relative;
+  overflow: hidden;
+}
+
+.wave-effect::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(0, 123, 255, 0.3) 20%, transparent 20%);
+  background-size: 1000% 1000%;
+  animation: wave-animation 2s linear infinite;
+}
+
+@keyframes wave-animation {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 1000% 0;
+  }
+}
+
+
+/* spectrumui.css */
+/* ... (önceki stiller) ... */
+
+/* Liquid Button */
+.button.liquid {
+  position: relative;
+  overflow: hidden;
+}
+
+.button.liquid::before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  background-color: #007bff;
+  transform-origin: 50% 100%;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.button.liquid:hover::before {
+  transform: scaleX(1);
+}
+
+
+/* spectrumui.css */
+/* ... (önceki stiller) ... */
+
+/* Morphing Navigation */
+.morph-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #007bff;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  cursor: pointer;
+  transition: width 0.3s ease-in-out;
+}
+
+.morph-nav.expanded {
+  width: 300px;
+}
+
+/* spectrumui.css */
+/* ... (önceki stiller) ... */
+
+/* Card Flip Animation */
+.card-flip {
+  perspective: 1000px;
+}
+
+.card-flip-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+
+.card-flip-inner .card-front,
+.card-flip-inner .card-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.card-flip-inner .card-back {
+  transform: rotateY(180deg);
+}
+
+
+/* spectrumui.css */
+/* ... (önceki stiller) ... */
+
+/* Particle Background */
+.particle-bg {
+  position: relative;
+  overflow: hidden;
+}
+
+.particle {
+  position: absolute;
+  background-color: #007bff;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  animation: particle-animation 3s linear infinite;
+}
+
+@keyframes particle-animation {
+  0% {
+    transform: translateY(0) rotate(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100px) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+/* spectrumui.css */
+/* ... (önceki stiller) ... */
+
+/* 3D Button */
+.button.3d {
+  perspective: 1000px;
+}
+
+.button.3d span {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  transform-style: preserve-3d;
+  transition: transform 0.3s ease-in-out;
+}
+
+.button.3d span::before {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  transform: translateZ(-5px);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.button.3d:hover span {
+  transform: rotateX(20deg) rotateY(20deg);
+}
+
+.button.3d:hover span::before {
+  opacity: 1;
+}
+
+
+/* spectrumui.css */
+/* ... (önceki stiller) ... */
+
+/* Bokeh Background */
+.bokeh-bg {
+  position: relative;
+  overflow: hidden;
+  background-color: #000;
+}
+
+.bokeh {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.6);
+  opacity: 0;
+  animation: bokeh-animation 5s linear infinite;
+}
+
+@keyframes bokeh-animation {
+  0%, 100% {
+    opacity: 0;
+  }
+  25%, 75% {
+    opacity: 1;
+  }
+}
+
+
+/* spectrumui.css */
+/* ... (önceki stiller) ... */
+
+/* Neumorphism Card */
+.neumorphism-card {
+  background: #f0f0f0;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.1),
+              -8px -8px 16px rgba(255, 255, 255, 0.8);
+  transition: transform 0.3s ease-in-out;
+}
+
+.neumorphism-card:hover {
+  transform: translate(-5px, -5px);
+}
+
+
+/* spectrumui.css */
+/* ... (önceki stiller) ... */
+
+/* Text Gradient Animation */
+.text-gradient-animation {
+  background: linear-gradient(45deg, #007bff, #00ffcc, #ff1493, #ffd700);
+  background-size: 400% 400%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: text-gradient-animation 8s ease-in-out infinite;
+}
+
+@keyframes text-gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+/* spectrumui.css */
+/* ... (önceki stiller) ... */
+
+/* Blob Shapes */
+.blob {
+  width: 100px;
+  height: 100px;
+  background-color: #007bff;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  animation: blob-animation 3s ease-in-out infinite;
+}
+
+@keyframes blob-animation {
+  0%, 100% {
+    border-radius: 50%;
+  }
+  50% {
+    border-radius: 25% 75% 75% 25% / 60% 45% 55% 40%;
+  }
+}
+
+
+/* spectrumui.css */
+/* ... (önceki stiller) ... */
+
+/* Parallax Effect */
+.parallax {
+  perspective: 1000px;
+  overflow: hidden;
+}
+
+.parallax-inner {
+  position: relative;
+  height: 400px;
+}
+
+.parallax-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+}
+
+.parallax-layer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translateZ(0);
+}
+
+.parallax-layer:nth-child(2) {
+  transform: translateZ(-50px);
+}
+
+.parallax-layer:nth-child(3) {
+  transform: translateZ(-100px);
+}
+
+.parallax-layer:nth-child(4) {
+  transform: translateZ(-150px);
+}
+
+
+/* spectrumui.css */
+/* ... (önceki stiller) ... */
+
+/* Video Background */
+.video-bg {
+  position: relative;
+  overflow: hidden;
+}
+
+.video-bg video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+
+/* spectrumui.css */
+/* ... (önceki stiller) ... */
+
+/* 3D Text Animation */
+@keyframes rotate-text {
+  from {
+    transform: rotateX(0);
+  }
+  to {
+    transform: rotateX(360deg);
+  }
+}
+
+.three-d-text {
+  font-size: 36px;
+  color: #007bff;
+  animation: rotate-text 5s linear infinite;
+}
+
+
+/* spectrumui.css */
+/* ... (önceki stiller) ... */
+
+/* Particle Text Animation */
+@keyframes particle-text {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.particle-text {
+  font-size: 24px;
+  color: #007bff;
+  position: relative;
+  display: inline-block;
+}
+
+.particle-text::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: transparent;
+  opacity: 0.8;
+  animation: particle-text 2s ease-in-out infinite;
+}
+
+
+/* spectrumui.css */
+/* ... (önceki stiller) ... */
+
+/* Floating Card Effect */
+.floating-card {
+  background-color: #007bff;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.floating-card:hover {
+  transform: translateY(-10px);
+}
+
+
+
 
 
 
