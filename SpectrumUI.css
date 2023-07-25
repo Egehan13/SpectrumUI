@@ -3111,6 +3111,123 @@ body {
   background-color: #007bff;
 }
 
+/* spectrumui.css */
+
+/* Temel Stiller */
+
+/* Genel Element Stilleri */
+.w-100 { width: 100%; }
+.h-100 { height: 100%; }
+.m-0 { margin: 0; }
+.mt-0 { margin-top: 0; }
+.mr-0 { margin-right: 0; }
+.mb-0 { margin-bottom: 0; }
+.ml-0 { margin-left: 0; }
+.p-0 { padding: 0; }
+.pt-0 { padding-top: 0; }
+.pr-0 { padding-right: 0; }
+.pb-0 { padding-bottom: 0; }
+.pl-0 { padding-left: 0; }
+
+/* Flex Container */
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Grid Container */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+/* Hover Animasyonları */
+.hover-scale {
+  transition: transform 0.3s ease-in-out;
+}
+
+.hover-scale:hover {
+  transform: scale(1.1);
+}
+
+.hover-rotate {
+  transition: transform 0.3s ease-in-out;
+}
+
+.hover-rotate:hover {
+  transform: rotate(360deg);
+}
+
+/* Özel Button Stilleri */
+.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.btn-success {
+  background-color: #00ff00;
+  color: #fff;
+}
+
+.btn-danger {
+  background-color: #ff0000;
+  color: #fff;
+}
+
+/* Özet */
+/* ... (önceki özet bölümü) ... */
+
+
+/* spectrumui.css */
+
+/* Yeni Özellikler */
+
+/* Animasyonlu Gradient Button */
+.btn-animated-gradient {
+  font-size: 18px;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background: linear-gradient(45deg, #007bff, #00ff00, #ff0000, #007bff);
+  background-size: 400% 400%;
+  animation: gradientAnimation 8s ease infinite;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Kenarlık Animasyonlu Button */
+.btn-border-animated {
+  font-size: 18px;
+  color: #007bff;
+  padding: 10px 20px;
+  border: 2px solid transparent;
+  border-image: linear-gradient(45deg, #007bff, #00ff00, #ff0000);
+  border-image-slice: 1;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.btn-border-animated:hover {
+  transform: scale(1.1);
+}
+
+
+
 
 
 
