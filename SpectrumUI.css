@@ -2756,6 +2756,362 @@ body {
   transform: rotateY(30deg);
 }
 
+/* spectrumui.css */
+/* ... (önceki stiller) ... */
+
+/* 3D Text Distortion Effect */
+.distorted-text {
+  font-size: 36px;
+  color: #007bff;
+  position: relative;
+  display: inline-block;
+  perspective: 1000px;
+}
+
+.distorted-text::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #ff1493;
+  z-index: -1;
+  transform: translate(-2px, -2px);
+}
+
+.distorted-text::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #00ff00;
+  z-index: -2;
+  transform: translate(-4px, -4px);
+}
+
+.distorted-text:hover::before {
+  transform: translate(2px, 2px);
+}
+
+.distorted-text:hover::after {
+  transform: translate(4px, 4px);
+}
+
+
+/* spectrumui.css */
+/* ... (önceki stiller) ... */
+
+/* CSS 3D Infinite Looping Wave */
+.wave-container {
+  width: 200px;
+  height: 100px;
+  position: relative;
+  overflow: hidden;
+  perspective: 800px;
+}
+
+.wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(-45deg, #007bff, transparent);
+  transform-origin: bottom;
+  animation: wave-animation 2s linear infinite;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: scaleY(0.2);
+  }
+  50% {
+    transform: scaleY(1);
+  }
+  100% {
+    transform: scaleY(0.2);
+  }
+}
+
+
+/* spectrumui.css */
+/* ... (önceki stiller) ... */
+
+/* 3D Animated Typewriter Effect */
+.typewriter-container {
+  width: 300px;
+  height: 100px;
+  overflow: hidden;
+  perspective: 800px;
+}
+
+.typewriter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  color: #007bff;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid #007bff;
+  animation: typewriter-animation 4s steps(40) infinite;
+}
+
+@keyframes typewriter-animation {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+
+/* spectrumui.css */
+/* ... (önceki stiller) ... */
+
+/* 3D Tilted Image Gallery */
+.tilted-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.tilted-image {
+  position: relative;
+  overflow: hidden;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+.tilted-image img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transform: translateZ(50px) rotateX(10deg) rotateY(-5deg);
+  transition: transform 0.5s ease-in-out;
+}
+
+.tilted-image:hover img {
+  transform: translateZ(100px) rotateX(20deg) rotateY(-10deg);
+}
+
+
+/* spectrumui.css */
+/* ... (önceki stiller) ... */
+
+/* Gradient Button */
+.gradient-button {
+  font-size: 18px;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-image: linear-gradient(to right, #007bff, #00ff00);
+  transition: background-image 0.3s ease-in-out;
+}
+
+.gradient-button:hover {
+  background-image: linear-gradient(to right, #00ff00, #007bff);
+}
+
+
+/* spectrumui.css */
+/* ... (önceki stiller) ... */
+
+/* Glassmorphic Button */
+.glassmorphic-button {
+  font-size: 18px;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  transition: background 0.3s ease-in-out;
+}
+
+.glassmorphic-button:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+
+/* spectrumui.css */
+/* ... (önceki stiller) ... */
+
+/* Neon Button */
+.neon-button {
+  font-size: 18px;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #007bff;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.neon-button:hover {
+  box-shadow: 0 0 20px rgba(0, 123, 255, 0.9);
+}
+
+
+/* spectrumui.css */
+/* ... (önceki stiller) ... */
+
+/* 3D Floating Button */
+.floating-button {
+  font-size: 18px;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #007bff;
+  box-shadow: 0 10px 20px rgba(0, 123, 255, 0.2);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.floating-button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 123, 255, 0.4);
+}
+
+
+/* spectrumui.css */
+/* ... (önceki stiller) ... */
+
+/* Material Design Button */
+.material-button {
+  font-size: 18px;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #007bff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.material-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+
+/* spectrumui.css */
+/* ... (önceki stiller) ... */
+
+/* Floating Outline Button */
+.floating-outline-button {
+  font-size: 18px;
+  color: #007bff;
+  padding: 10px 20px;
+  border: 2px solid #007bff;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: transparent;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.floating-outline-button:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+
+/* spectrumui.css */
+/* ... (önceki stiller) ... */
+
+/* Rounded Gradient Button */
+.rounded-gradient-button {
+  font-size: 18px;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  background-image: linear-gradient(to right, #007bff, #00ff00);
+  transition: background-image 0.3s ease-in-out;
+}
+
+.rounded-gradient-button:hover {
+  background-image: linear-gradient(to right, #00ff00, #007bff);
+}
+
+
+/* spectrumui.css */
+/* ... (önceki stiller) ... */
+
+/* Borderless Glass Button */
+.borderless-glass-button {
+  font-size: 18px;
+  color: #007bff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.borderless-glass-button:hover {
+  background: rgba(255, 255, 255, 0.25);
+  color: #fff;
+}
+
+
+/* spectrumui.css */
+/* ... (önceki stiller) ... */
+
+/* Bold 3D Button */
+.bold-3d-button {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #007bff;
+  box-shadow: 0 6px 12px rgba(0, 123, 255, 0.2);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.bold-3d-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 123, 255, 0.4);
+}
+
+
+/* spectrumui.css */
+/* ... (önceki stiller) ... */
+
+/* Gradient Border Button */
+.gradient-border-button {
+  font-size: 18px;
+  color: #fff;
+  padding: 10px 20px;
+  border: 2px solid transparent;
+  border-image: linear-gradient(to right, #007bff, #00ff00);
+  border-image-slice: 1;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: transparent;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.gradient-border-button:hover {
+  background-color: #007bff;
+}
+
+
 
 
 
