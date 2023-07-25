@@ -1583,6 +1583,772 @@ body {
   transform: translateY(-10px);
 }
 
+/* spectrumui.css */
+/* ... (önceki stiller) ... */
+
+/* Scroll to Top Button */
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #007bff;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.scroll-to-top.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.scroll-to-top i {
+  font-size: 24px;
+}
+
+
+/* spectrumui.css */
+/* ... (önceki stiller) ... */
+
+/* Image Overlay Effect */
+.image-overlay {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-overlay img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.image-overlay .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 123, 255, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.image-overlay:hover .overlay {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+/* spectrumui.css */
+/* ... (önceki stiller) ... */
+
+/* CSS Animasyon İlerleme Çubuğu */
+.progress-bar {
+  width: 100%;
+  height: 10px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress {
+  width: 0;
+  height: 100%;
+  background-color: #007bff;
+  border-radius: 5px;
+  transition: width 0.3s ease-in-out;
+}
+
+
+/* spectrumui.css */
+/* ... (önceki stiller) ... */
+
+/* Blob Animasyonlu Yükleme Spinner */
+.spinner {
+  width: 50px;
+  height: 50px;
+  background-color: #007bff;
+  border-radius: 50%;
+  position: relative;
+  animation: spinner-animation 2s ease-in-out infinite;
+}
+
+@keyframes spinner-animation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.7);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+/* spectrumui.css */
+/* ... (önceki stiller) ... */
+
+/* Morphing Hamburger Icon */
+.hamburger-icon {
+  width: 30px;
+  height: 20px;
+  position: relative;
+  cursor: pointer;
+}
+
+.hamburger-icon span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #007bff;
+  position: absolute;
+  left: 0;
+  transition: transform 0.3s ease;
+}
+
+.hamburger-icon span:nth-child(1) {
+  top: 0;
+}
+
+.hamburger-icon span:nth-child(2),
+.hamburger-icon span:nth-child(3) {
+  top: 8px;
+}
+
+.hamburger-icon span:nth-child(4) {
+  top: 16px;
+}
+
+.hamburger-icon.active span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger-icon.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-icon.active span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+
+
+/* spectrumui.css */
+/* ... (önceki stiller) ... */
+
+/* Focusable Input Field */
+.focusable-input {
+  position: relative;
+  display: inline-block;
+}
+
+.focusable-input input {
+  padding: 10px;
+  border: 2px solid #007bff;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  transition: border-color 0.3s ease;
+}
+
+.focusable-input input:focus {
+  outline: none;
+  border-color: #ff1493;
+  box-shadow: 0 0 8px rgba(255, 20, 147, 0.5);
+}
+
+.focusable-input::before {
+  content: '';
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  width: calc(100% + 12px);
+  height: calc(100% + 12px);
+  border-radius: 8px;
+  border: 2px solid #007bff;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.focusable-input input:focus ~::before {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+/* spectrumui.css */
+/* ... (önceki stiller) ... */
+
+/* Rainbow Text Animation */
+@keyframes rainbow-text {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+.rainbow-text {
+  font-size: 24px;
+  font-weight: bold;
+  background-clip: text;
+  background-image: linear-gradient(90deg, #007bff, #00ff00, #ff1493, #ffd700);
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: rainbow-text 5s linear infinite;
+}
+
+
+/* spectrumui.css */
+/* ... (önceki stiller) ... */
+
+/* Shape Morphing Button */
+.shape-morphing-button {
+  width: 100px;
+  height: 50px;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.shape-morphing-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ff1493;
+  transform-origin: 0 50%;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.shape-morphing-button:hover::before {
+  transform: scaleX(1);
+}
+
+/* spectrumui.css */
+/* ... (önceki stiller) ... */
+
+/* Rotating Card Carousel */
+.card-carousel {
+  perspective: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  overflow: hidden;
+}
+
+.card-carousel-item {
+  width: 200px;
+  height: 300px;
+  background-color: #007bff;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+
+.card-carousel-item:nth-child(1) {
+  background-color: #007bff;
+  transform: rotateY(0);
+}
+
+.card-carousel-item:nth-child(2) {
+  background-color: #00ff00;
+  transform: rotateY(45deg);
+}
+
+.card-carousel-item:nth-child(3) {
+  background-color: #ff1493;
+  transform: rotateY(90deg);
+}
+
+.card-carousel-item:nth-child(4) {
+  background-color: #ffd700;
+  transform: rotateY(135deg);
+}
+
+.card-carousel-item:nth-child(5) {
+  background-color: #ff7f50;
+  transform: rotateY(180deg);
+}
+
+/* spectrumui.css */
+/* ... (önceki stiller) ... */
+
+/* Tilt Hover Effect */
+.tilt-effect {
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  transition: transform 0.3s ease;
+}
+
+.tilt-effect:hover {
+  transform: rotateX(10deg) rotateY(10deg);
+}
+
+
+/* spectrumui.css */
+/* ... (önceki stiller) ... */
+
+/* Animated Tooltip */
+.tooltip {
+  position: relative;
+  cursor: pointer;
+}
+
+.tooltip .tooltip-text {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 5px;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+.tooltip:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+/* spectrumui.css */
+/* ... (önceki stiller) ... */
+
+/* Glitch Text Effect */
+.glitch-text {
+  position: relative;
+  display: inline-block;
+}
+
+.glitch-text::before,
+.glitch-text::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 2px;
+  color: #007bff;
+  clip: rect(0, 0, 0, 0);
+}
+
+.glitch-text::before {
+  left: -2px;
+}
+
+@keyframes glitch-animation {
+  0% {
+    clip: rect(40px, 9999px, 15px, 0);
+  }
+  5%, 100% {
+    clip: rect(40px, 9999px, 10px, 0);
+  }
+  10% {
+    clip: rect(45px, 9999px, 35px, 0);
+  }
+  15% {
+    clip: rect(25px, 9999px, 0, 0);
+  }
+  20% {
+    clip: rect(20px, 9999px, 25px, 0);
+  }
+  25% {
+    clip: rect(15px, 9999px, 40px, 0);
+  }
+  30% {
+    clip: rect(0, 9999px, 30px, 0);
+  }
+  35% {
+    clip: rect(45px, 9999px, 25px, 0);
+  }
+  40% {
+    clip: rect(35px, 9999px, 30px, 0);
+  }
+  45% {
+    clip: rect(0, 9999px, 10px, 0);
+  }
+  50% {
+    clip: rect(40px, 9999px, 10px, 0);
+  }
+  55% {
+    clip: rect(5px, 9999px, 40px, 0);
+  }
+  60% {
+    clip: rect(25px, 9999px, 20px, 0);
+  }
+  65% {
+    clip: rect(0, 9999px, 15px, 0);
+  }
+  70% {
+    clip: rect(20px, 9999px, 35px, 0);
+  }
+  75%, 100% {
+    clip: rect(30px, 9999px, 15px, 0);
+  }
+  80% {
+    clip: rect(45px, 9999px, 10px, 0);
+  }
+  85% {
+    clip: rect(30px, 9999px, 20px, 0);
+  }
+  90% {
+    clip: rect(40px, 9999px, 15px, 0);
+  }
+  95% {
+    clip: rect(0, 9999px, 40px, 0);
+  }
+}
+.glitch-text:hover::before,
+.glitch-text:hover::after {
+  animation: glitch-animation 0.5s infinite;
+}
+
+
+/* spectrumui.css */
+/* ... (önceki stiller) ... */
+
+/* Floating Social Media Icons */
+.social-icons {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+}
+
+.social-icons a {
+  width: 40px;
+  height: 40px;
+  background-color: #007bff;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  border-radius: 50%;
+  margin-right: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.social-icons a:hover {
+  transform: translateY(-5px);
+}
+
+
+/* spectrumui.css */
+/* ... (önceki stiller) ... */
+
+/* Slide-In Overlay Menu */
+.overlay-menu {
+  position: fixed;
+  top: 0;
+  left: -300px;
+  width: 300px;
+  height: 100%;
+  background-color: #007bff;
+  color: #fff;
+  padding: 20px;
+  transition: left 0.3s ease;
+}
+
+.overlay-menu.active {
+  left: 0;
+}
+
+
+/* spectrumui.css */
+/* ... (önceki stiller) ... */
+
+/* CSS 3D Flip Card */
+.flip-card {
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 200px;
+  height: 300px;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #007bff;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}
+
+.flip-card-back {
+  background-color: #00ff00;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  transform: rotateY(180deg);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+
+/* spectrumui.css */
+/* ... (önceki stiller) ... */
+
+/* 3D Ribbon Banner */
+.ribbon {
+  position: relative;
+  width: 200px;
+  height: 100px;
+  overflow: hidden;
+}
+
+.ribbon::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100px;
+  width: 200px;
+  height: 200px;
+  background-color: #007bff;
+  transform: rotate(45deg);
+}
+
+.ribbon-text {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+
+/* spectrumui.css */
+/* ... (önceki stiller) ... */
+
+/* CSS 3D Sphere Animation */
+.sphere-container {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  perspective: 1000px;
+}
+
+.sphere {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  animation: spin 5s linear infinite;
+}
+
+.sphere div {
+  width: 50px;
+  height: 50px;
+  background-color: #007bff;
+  position: absolute;
+  border-radius: 50%;
+  transform-style: preserve-3d;
+}
+
+.sphere div:nth-child(1) {
+  top: 0;
+  left: 150px;
+  animation: orbit1 5s linear infinite;
+}
+
+.sphere div:nth-child(2) {
+  top: 50px;
+  left: 100px;
+  animation: orbit2 5s linear infinite;
+}
+
+.sphere div:nth-child(3) {
+  top: 100px;
+  left: 50px;
+  animation: orbit3 5s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+@keyframes orbit1 {
+  100% {
+    transform: rotateY(360deg) translateX(150px) rotateY(-360deg);
+  }
+}
+
+@keyframes orbit2 {
+  100% {
+    transform: rotateY(360deg) translateX(100px) rotateY(-360deg);
+  }
+}
+
+@keyframes orbit3 {
+  100% {
+    transform: rotateY(360deg) translateX(50px) rotateY(-360deg);
+  }
+}
+
+
+/* spectrumui.css */
+/* ... (önceki stiller) ... */
+
+/* 3D Animated Progress Bar */
+.progress-bar-3d {
+  width: 200px;
+  height: 20px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.progress-3d {
+  height: 100%;
+  background-color: #007bff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-origin: left;
+  animation: progress-animation 5s linear infinite;
+}
+
+@keyframes progress-animation {
+  0%, 100% {
+    width: 0;
+  }
+  50% {
+    width: 100%;
+  }
+}
+
+
+/* spectrumui.css */
+/* ... (önceki stiller) ... */
+
+/* 3D Animated Cube Navigation */
+.cube-container {
+  perspective: 1000px;
+  width: 200px;
+  height: 200px;
+  position: relative;
+  transform-style: preserve-3d;
+}
+
+.cube {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  animation: rotate-cube 10s linear infinite;
+}
+
+.cube div {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  border: 2px solid #007bff;
+  background-color: rgba(0, 123, 255, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}
+
+.cube div:nth-child(1) {
+  transform: translateZ(100px);
+}
+
+.cube div:nth-child(2) {
+  transform: rotateX(90deg) translateZ(100px);
+}
+
+.cube div:nth-child(3) {
+  transform: rotateY(90deg) translateZ(100px);
+}
+
+.cube div:nth-child(4) {
+  transform: rotateX(-90deg) translateZ(100px);
+}
+
+.cube div:nth-child(5) {
+  transform: rotateY(-90deg) translateZ(100px);
+}
+
+.cube div:nth-child(6) {
+  transform: translateZ(-100px);
+}
+
+@keyframes rotate-cube {
+  0%, 100% {
+    transform: rotateX(0) rotateY(0);
+  }
+  16.66% {
+    transform: rotateX(90deg) rotateY(0);
+  }
+  33.33% {
+    transform: rotateX(90deg) rotateY(90deg);
+  }
+  50% {
+    transform: rotateX(0) rotateY(90deg);
+  }
+  66.66% {
+    transform: rotateX(-90deg) rotateY(90deg);
+  }
+  83.33% {
+    transform: rotateX(-90deg) rotateY(0);
+  }
+}
+
+
 
 
 
