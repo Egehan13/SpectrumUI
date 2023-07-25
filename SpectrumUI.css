@@ -228,3 +228,519 @@ body {
   /* Daha fazla küçük ekran stil kuralları burada eklenebilir */
 }
 
+/* spectrumui.css */
+/* ... (önceki stiller) ... */
+
+/* Görseller */
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.img-circle {
+  border-radius: 50%;
+}
+
+.figure {
+  position: relative;
+}
+
+.figure img {
+  display: block;
+}
+
+.figure-caption {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 5px 10px;
+  text-align: center;
+}
+
+/* Örnek kullanım:
+<img src="path/to/image.jpg" alt="Resim" class="img-fluid">
+<div class="figure">
+  <img src="path/to/image.jpg" alt="Resim" class="img-circle">
+  <div class="figure-caption">Resim Açıklaması</div>
+</div>
+*/
+
+
+/* spectrumui.css */
+/* ... (önceki stiller) ... */
+
+/* Formlar */
+.form-control {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+/* Buton Grupları */
+.btn-group {
+  display: flex;
+  align-items: center;
+}
+
+.btn-group .button {
+  margin-right: 5px;
+}
+
+/* Örnek kullanım:
+<input type="text" placeholder="Adınız" class="form-control">
+<textarea placeholder="Mesajınız" class="form-control"></textarea>
+<div class="btn-group">
+  <button class="button primary">Gönder</button>
+  <button class="button secondary">İptal</button>
+</div>
+*/
+
+
+/* spectrumui.css */
+/* ... (önceki stiller) ... */
+
+/* Başlık ve Altbilgi */
+.header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Yükleme Çubuğu */
+.progress-bar {
+  width: 100%;
+  height: 20px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+}
+
+/* Örnek kullanım:
+<div class="header">
+  <h1>SpectrumUI Kütüphanesi</h1>
+</div>
+<div class="footer">Tüm hakları saklıdır.</div>
+<div class="progress-bar">
+  <div class="progress" style="width: 60%; background-color: #007bff;"></div>
+</div>
+*/
+
+
+/* spectrumui.css */
+/* ... (önceki stiller) ... */
+
+/* Düğme Renkleri */
+.button.info {
+  background-color: #17a2b8;
+  color: #fff;
+}
+
+.button.light {
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+.button.dark {
+  background-color: #343a40;
+  color: #fff;
+}
+
+/* Renk Paleti */
+/* ... (önceki stiller) ... */
+
+
+/* spectrumui.css */
+/* ... (önceki stiller) ... */
+
+/* Responsive Tasarım */
+@media screen and (max-width: 320px) {
+  .button.large {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .navbar li {
+    display: block;
+    margin: 5px 0;
+  }
+
+  /* Diğer küçük ekran stil kuralları burada eklenebilir */
+}
+
+/* spectrumui.css */
+/* ... (önceki stiller) ... */
+
+/* Dropdown Menüsü */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* spectrumui.css */
+/* ... (önceki stiller) ... */
+
+/* Sosyal Medya İkonları */
+.social-icon {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-size: cover;
+  margin-right: 5px;
+}
+
+/* Örnek kullanım:
+<a href="#" class="social-icon" style="background-image: url('path/to/facebook-icon.png');"></a>
+<a href="#" class="social-icon" style="background-image: url('path/to/twitter-icon.png');"></a>
+<!-- Diğer sosyal medya ikonları buraya eklenir -->
+*/
+
+/* spectrumui.css */
+/* ... (önceki stiller) ... */
+
+/* Dönen İkon Animasyonu */
+.rotate-icon {
+  transition: transform 0.3s ease;
+}
+
+.rotate-icon:hover {
+  transform: rotate(90deg);
+}
+
+/* Kayan Arka Plan Animasyonu */
+.gradient-bg {
+  background: linear-gradient(to right, #007bff, #28a745, #ffc107, #dc3545);
+  background-size: 200% auto;
+  animation: gradient-slide 5s linear infinite;
+}
+
+@keyframes gradient-slide {
+  0% {
+    background-position: 0 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+
+/* spectrumui.css */
+/* ... (önceki stiller) ... */
+
+/* Sekmeli Menü */
+.tabs {
+  display: flex;
+}
+
+.tab-item {
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+/* spectrumui.css */
+/* ... (önceki stiller) ... */
+
+/* Düğme Renkleri */
+/* ... (önceki stiller) ... */
+
+/* Yeni Renkler */
+.button.purple {
+  background-color: #8a2be2;
+  color: #fff;
+}
+
+.button.yellow {
+  background-color: #f0e68c;
+  color: #000;
+}
+
+.button.orange {
+  background-color: #ffa500;
+  color: #fff;
+}
+
+/* Renk Paleti */
+/* ... (önceki stiller) ... */
+
+/* spectrumui.css */
+/* ... (önceki stiller) ... */
+
+/* Modal */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+/* spectrumui.css */
+/* ... (önceki stiller) ... */
+
+/* Basit Slider */
+.slider {
+  overflow: hidden;
+}
+
+.slider-container {
+  display: flex;
+  transition: transform 0.3s ease;
+}
+
+.slider-item {
+  flex: 0 0 100%;
+}
+
+
+/* spectrumui.css */
+/* ... (önceki stiller) ... */
+
+/* Görsel Galeri */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.gallery-item {
+  width: 100%;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+  transform: scale(1.1);
+}
+
+
+/* spectrumui.css */
+/* ... (önceki stiller) ... */
+
+/* Listeleme Stilleri */
+.custom-list {
+  list-style: none;
+  padding-left: 20px;
+}
+
+.custom-list li {
+  position: relative;
+  padding-left: 30px;
+}
+
+.custom-list li:before {
+  content: "\2022";
+  position: absolute;
+  left: 0;
+}
+
+
+/* spectrumui.css */
+/* ... (önceki stiller) ... */
+
+/* Düğme Renkleri */
+/* ... (önceki stiller) ... */
+
+/* Yeni Renkler */
+.button.teal {
+  background-color: #008080;
+  color: #fff;
+}
+
+.button.pink {
+  background-color: #ff1493;
+  color: #fff;
+}
+
+.button.gray {
+  background-color: #808080;
+  color: #fff;
+}
+
+/* Renk Paleti */
+/* ... (önceki stiller) ... */
+
+
+/* spectrumui.css */
+/* ... (önceki stiller) ... */
+
+/* Neon Button */
+.button.neon {
+  background-color: transparent;
+  border: 2px solid #00ffcc;
+  color: #00ffcc;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+}
+
+.button.neon::before {
+  content: '';
+  position: absolute;
+  top: -100%;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, #00ffcc, #00aabb, #003366, #00aabb, #00ffcc);
+  opacity: 0.6;
+  transform: rotate(-45deg);
+  transition: transform 0.5s ease-in-out;
+}
+
+.button.neon:hover::before {
+  top: 100%;
+  left: 100%;
+  transform: rotate(45deg);
+}
+
+
+/* spectrumui.css */
+/* ... (önceki stiller) ... */
+
+/* Outline Button */
+.button.outline {
+  background-color: transparent;
+  border: 2px solid #333;
+  color: #333;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.button.outline:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+
+/* spectrumui.css */
+/* ... (önceki stiller) ... */
+
+/* Şeffaf Arka Planlı Button */
+.button.transparent {
+  background-color: transparent;
+  border: none;
+  color: #007bff;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button.transparent:hover {
+  background-color: rgba(0, 123, 255, 0.1);
+}
+
+
+/* spectrumui.css */
+/* ... (önceki stiller) ... */
+
+/* Büyüyen Button */
+.button.grow {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.button.grow:hover {
+  transform: scale(1.1);
+}
+
+
+/* spectrumui.css */
+/* ... (önceki stiller) ... */
+
+/* Ok İkonlu Button */
+.button.arrow {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 30px;
+  font-size: 16px;
+  border-radius: 30px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.button.arrow::after {
+  content: '\2192';
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+
+.button.arrow:hover {
+  transform: translateX(10px);
+}
+
+
+
