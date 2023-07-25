@@ -143,3 +143,88 @@ body {
     font-size: 14px; /* Metin boyutunu küçült */
   }
 }
+
+/* spectrumui.css */
+/* ... (önceki stiller) ... */
+
+/* Renk Paleti */
+.color-palette {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.color-item {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Örnek kullanım:
+<div class="color-palette">
+  <div class="color-item" style="background-color: #007bff;"></div>
+  <div class="color-item" style="background-color: #28a745;"></div>
+  <div class="color-item" style="background-color: #ffc107;"></div>
+  <div class="color-item" style="background-color: #dc3545;"></div>
+  <!-- Diğer renkler buraya eklenir -->
+</div>
+*/
+
+
+/* spectrumui.css */
+/* ... (önceki stiller) ... */
+
+/* İkonlar */
+.icon {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-size: cover;
+}
+
+/* Yeni ikonlar için örnek kullanım:
+<span class="icon" style="background-image: url('path/to/new-icon.svg');"></span>
+*/
+
+/* spectrumui.css */
+/* ... (önceki stiller) ... */
+
+/* Kartlar */
+.card.transparent {
+  background-color: transparent;
+  box-shadow: none;
+  border: 1px solid #ccc;
+}
+
+.card.rounded {
+  border-radius: 8px;
+}
+
+/* Örnek kullanım:
+<div class="card">
+  <h3>Kart Başlık</h3>
+  <p>Kart içeriği burada yer alacak.</p>
+</div>
+<div class="card transparent rounded">
+  <h3>Transparan ve Yuvarlak Kart</h3>
+  <p>Kart içeriği burada yer alacak.</p>
+</div>
+*/
+
+
+/* spectrumui.css */
+/* ... (önceki stiller) ... */
+
+/* Responsive Tasarım */
+@media screen and (max-width: 480px) {
+  .button.large {
+    padding: 12px 24px;
+    font-size: 16px;
+  }
+
+  /* Daha fazla küçük ekran stil kuralları burada eklenebilir */
+}
+
